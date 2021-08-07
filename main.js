@@ -25,3 +25,19 @@ console.log(sum(110, 10));
 let sec = Math.random(1, 10)
 
 console.log(sec);
+
+
+var a1 = 1;
+var amp = `+`;
+var b = 4;
+let res = 'Hello'
+
+function calculate(a1, b) {
+if (a >= b) {
+     var result = res;
+}
+return result;
+}
+
+console.log(calculate(a1,b)
+ 

@@ -75,20 +75,42 @@
 // console.log('\u23F3');//0000 - FFFF(UTF-16)
 // console.log('\u{1F514}');//0 - 10FFFF(UTF-32)
 
-const s1 = '<div class="spinner">Loading...</div>';
+// const s1 = '<div class="spinner">Loading...</div>';
 
-console.log(s1);
+// console.log(s1);
+// debugger;
+// const a = 2;
+// const b = 5;
 
-const a = 2;
-const b = 5;
+// const s2 = `
+// <h1>Title</h1>
+// <ul>
+// <li>${a} + ${b} = ${a + b}</li>
+// <li>${a} * ${b} = ${a * b}</li>
+// <li>${a} / ${b} = ${a / b}</li>
+// </ul>
+// `;
 
-const s2 = `
-<h1>Title</h1>
-<ul>
-<li>${a} + ${b} = ${a + b}</li>
-<li>${a} * ${b} = ${a * b}</li>
-<li>${a} / ${b} = ${a / b}</li>
-</ul>
-`;
+// console.log(s2);
 
-console.log(s2);
+// function getString(){
+//      const greeting = 'Hello, Mate Academy!'
+//      return greeting
+//    }
+
+//    console.log(getString());
+
+// function getString (){
+//      return 'I am learning JavaScript';
+//    }
+   
+//    const result = getString ();
+
+//    console.log(getString());
+
+
+const getString = () => {
+     let jobTitle = 'I am a programmer';
+   
+     return jobTitle ;
+   }

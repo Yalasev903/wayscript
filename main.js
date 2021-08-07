@@ -109,8 +109,15 @@
 //    console.log(getString());
 
 
-const getString = () => {
-     let jobTitle = 'I am a programmer';
+// const getString = () => {
+//      let jobTitle = 'I am a programmer';
    
-     return jobTitle ;
-   }
+//      return jobTitle ;
+//    }
+
+
+function greeter (name){
+     return `Hi, ${name}!`;
+    }
+
+    console.log(greeter(Ярослав))

@@ -117,7 +117,8 @@
 
 
 function greeter (name){
+     
      return `Hi, ${name}!`;
     }
 
-    console.log(greeter(Ярослав))
+    console.log(greeter('Ярослав'));

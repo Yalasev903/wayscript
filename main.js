@@ -116,9 +116,81 @@
 //    }
 
 
-function greeter (name){
+// function greeter (name){
      
-     return `Hi, ${name}!`;
-    }
+//      return `Hi, ${name}!`;
+//     }
 
-    console.log(greeter('Ярослав'));
+//     console.log(greeter('Ярослав'));
+
+// function canBuyBeer(age) {
+//      if (age >= 18) {
+//        return 'You can buy beer';
+//      } else {
+//        return 'You can not buy beer';
+//      }
+//    }
+
+//    console.log(canBuyBeer(19));
+
+
+
+//Тернарные операторы (для выбора значения в зависимости от условия НЕ ИСПОЛЬЗОВАТЬ В СЛОЖНЫХ КОНСТРУКЦИЯХ)
+// let age = 2;
+
+// let message = (age > 18) 
+// ? ('Adult') 
+// : (age > 7)
+//   ? ('Child')
+//   : ('Baby');
+  
+//   console.log(message);
+
+
+// function calculateTaxes(income) {
+// const rate1 = 0.02;
+// const rate2 = 0.03;
+// const rate3 = 0.05;
+// const tax1 = 1000;
+// const tax2 = 10000;
+
+
+//      if(income <= tax1) {
+   
+//      return income * rate1;
+//    }
+   
+//    if(income <= tax2) {
+//      return tax1 * rate1 + (income - tax1) * rate2;
+//    } 
+//    if(income > tax2) {
+//      return tax1 * rate1 + (tax2 - tax1) * rate2 + (income - tax2) * rate3;
+//    }
+//     }
+
+// console.log(calculateTaxes(10001));
+
+function getLargestExpressionResult(a, b) {
+     const sum = a + b;
+     const min = a - b;
+     const mult = a * b;
+     const div = a / b;
+   
+     if (sum >= min && sum >= mult && sum >= div) {
+       return sum;
+     }
+   
+     if (min >= sum && min >= mult && min >= div) {
+       return min;
+     }
+   
+     if (mult >= min && mult >= sum && mult >= div) {
+       return mult;
+     }
+   
+     if (div >= min && div >= mult && div >= sum) {
+       return div;
+     }
+   }
+
+   console.log(getLargestExpressionResult(1, 3));

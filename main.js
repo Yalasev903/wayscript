@@ -170,27 +170,84 @@
 
 // console.log(calculateTaxes(10001));
 
-function getLargestExpressionResult(a, b) {
-     const sum = a + b;
-     const min = a - b;
-     const mult = a * b;
-     const div = a / b;
+// function getLargestExpressionResult(a, b) {
+//      const sum = a + b;
+//      const min = a - b;
+//      const mult = a * b;
+//      const div = a / b;
    
-     if (sum >= min && sum >= mult && sum >= div) {
-       return sum;
-     }
+//      if (sum >= min && sum >= mult && sum >= div) {
+//        return sum;
+//      }
    
-     if (min >= sum && min >= mult && min >= div) {
-       return min;
-     }
+//      if (min >= sum && min >= mult && min >= div) {
+//        return min;
+//      }
    
-     if (mult >= min && mult >= sum && mult >= div) {
-       return mult;
-     }
+//      if (mult >= min && mult >= sum && mult >= div) {
+//        return mult;
+//      }
    
-     if (div >= min && div >= mult && div >= sum) {
-       return div;
+//      if (div >= min && div >= mult && div >= sum) {
+//        return div;
+//      }
+//    }
+
+//    console.log(getLargestExpressionResult(1, 3));
+
+
+// const value = 2;
+
+// switch (value) {
+//      case 5:
+//          console.log('A few');
+//          break;
+//      case 10:
+//      console.log('Many');
+//      break;
+//           default:
+//      console.log('Some');
+// }
+
+// switch (true) {
+//      case (value < 5):
+//           console.log('A few');
+//           break;
+//      case (value > 10):
+//           console.log('Many');
+//           break;
+//           default:
+//      console.log('Some');
+// }
+
+function getDirection(direction) {
+
+     switch(direction) {
+   
+       case 'forward':
+   
+         return format(0, 1);
+   
+       case 'back':
+   
+         return format(0, -1);
+   
+       case 'right':
+   
+         return format(1, 0);
+   
+       case 'left':
+   
+         return format(-1, 0);
+   
+       default:
+   
+         return format(0, 0);
      }
    }
-
-   console.log(getLargestExpressionResult(1, 3));
+   
+   function format (x, y) {
+     return `hor=${x} ver=${y}`;
+   }
+   
+   console.log(getDirection('forward'));

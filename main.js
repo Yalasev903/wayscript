@@ -7,7 +7,7 @@
 // }
 
 // console.log(plusNumber(inputNum));
-
+ 
 // let string = 'less one';
 // let lengsString = string.length;
 //  console.log(lengsString)
@@ -220,34 +220,52 @@
 //      console.log('Some');
 // }
 
-function getDirection(direction) {
+// function getDirection(direction) {
 
-     switch(direction) {
+//      switch(direction) {
    
-       case 'forward':
+//        case 'forward':
    
-         return format(0, 1);
+//          return format(0, 1);
    
-       case 'back':
+//        case 'back':
    
-         return format(0, -1);
+//          return format(0, -1);
    
-       case 'right':
+//        case 'right':
    
-         return format(1, 0);
+//          return format(1, 0);
    
-       case 'left':
+//        case 'left':
    
-         return format(-1, 0);
+//          return format(-1, 0);
    
-       default:
+//        default:
    
-         return format(0, 0);
-     }
-   }
+//          return format(0, 0);
+//      }
+//    }
    
-   function format (x, y) {
-     return `hor=${x} ver=${y}`;
-   }
+//    function format (x, y) {
+//      return `hor=${x} ver=${y}`;
+//    }
    
-   console.log(getDirection('forward'));
+//    console.log(getDirection('forward'));
+
+// Цикл for 
+// debugger;
+// for (let i = 0; i < 3; i++) {
+// console.log(i);
+// console.log('OK');
+// }
+// console.log('===DONE===');
+// debugger;
+// for (let i = 0; true; i++) {
+// console.log(i);
+// console.log('OK');
+
+//      if(i >= 3) {
+//           break;
+//      }
+// }
+// console.log('===DONE===');
